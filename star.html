@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="https://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+	<head> 
+		<meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="x-apple-disable-message-reformatting">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+		
+		<title>Star of Honolulu</title>
+		
+		<!-- Microfsoft BS -->
+		<!--[if mso]>
+		<style>
+			table {border-collapse:collapse;border-spacing:0;border:none;margin:0;}
+			div, td {padding:0;}
+			div {margin:0 !important;}
+		</style>
+		<noscript>
+			<xml>
+				<o:OfficeDocumentSettings>
+				<o:PixelsPerInch>96</o:PixelsPerInch>
+				</o:OfficeDocumentSettings>
+			</xml>
+		</noscript>
+		<![endif]-->
+		
+		<style>
+			/* -------------------------------------
+			GLOBAL RESETS
+			------------------------------------- */
+
+			/*All the styling goes here*/
+
+			img {
+				border: none;
+				-ms-interpolation-mode: bicubic;
+				max-width: 100%; 
+			}
+
+			body { 
+				margin: 0;
+				padding: 0;
+				color: #222222;
+				font-family: 'Nunito Sans', sans-serif;
+				font-size: 16px;
+				line-height: 1.5;
+				-webkit-font-smoothing: antialiased;
+				-ms-text-size-adjust: 100%;
+				-webkit-text-size-adjust: 100%; 
+			}
+
+			table {
+				border-collapse: separate;
+				mso-table-lspace: 0pt;
+				mso-table-rspace: 0pt;
+				width: 100%; 
+			}
+			
+			table td {
+				font-family: 'Nunito Sans', sans-serif;
+				font-size: 14px;
+				vertical-align: top; 
+			}
+			
+			.dark{
+				background-color: #d0cece;
+				padding: 15px;
+			}
+
+			/* -------------------------------------
+			BODY & CONTAINER
+			------------------------------------- */
+			.container {
+				display: block;
+				width: 100%; 
+				max-width: 640px;
+				margin: 0 auto ;
+				padding: 10px;
+				box-sizing: border-box;
+			} 
+
+			/* -------------------------------------
+			HEADER, FOOTER, MAIN
+			------------------------------------- */
+			.main { 
+				border-radius: 3px;
+				width: 100%; 
+			}
+
+			.main td {
+				padding: 6px;
+				font-family: 'Nunito Sans', sans-serif;
+				font-size: 14px;
+				vertical-align: middle;
+			}
+
+			.wrapper {
+				width: 100%;
+				padding: 20px 0; 
+				box-sizing: border-box;
+			}
+			
+			
+
+			.wrapper td {
+				padding: 3px 0;
+				font-family: 'Nunito Sans', sans-serif;
+				font-size: 14px;
+				vertical-align: middle;
+			}
+		 
+			.footer { 
+				width: 100%; 
+				max-width: 980px;
+				margin-top: 10px;
+				margin: 0 auto ; 
+				text-align: center;
+			}
+			.footer td,
+			.footer p,
+			.footer span,
+			.footer a {
+				padding: 0;
+				color: #999999;
+				text-align: left; 
+				line-height: 1.2;
+			}
+
+			/* -------------------------------------
+			TYPOGRAPHY
+			------------------------------------- */
+			h1,
+			h2,
+			h3,
+			h4 {
+				color: #0B97B2;
+				font-family: 'Roboto Slab', serif;
+				font-weight: 400;
+				line-height: 1.5;
+				margin: 0;
+			}
+
+			h1 {
+				font-size: 32px;
+				font-weight: 300;
+			}
+			h2{
+				font-size: 22px;
+				font-weight: 300;
+			}
+
+			p,
+			ul,
+			ol {
+				margin: 0;
+				padding-left: 0;
+				font-family: 'Nunito Sans', sans-serif;
+				font-size: 14px;
+				font-weight: normal;
+				line-height: 1.5;
+			}
+			p li,
+			ul li,
+			ol li {
+				list-style-type: none;
+				list-style-position: inside;
+				margin-left: 0; 
+			}
+
+			a {
+			text-decoration: underline; 
+			}
+			
+			.bold{ 
+				color: #0B97B2;
+				font-family: 'Roboto Slab', serif;
+				font-weight: 700;
+			}
+			
+			.details{
+				display: inline-block;
+				margin: 0 5px;
+			}
+
+
+			/* -------------------------------------
+			OTHER STYLES THAT MIGHT BE USEFUL
+			------------------------------------- */
+			
+			.last {margin-bottom: 0; }
+
+			.first {
+			margin-top: 0; 
+			}
+
+			.align-center {
+			text-align: center; 
+			}
+
+			.align-right {
+			text-align: right; 
+			}
+
+			.align-left {
+			text-align: left; 
+			}
+
+			.clear {
+			clear: both; 
+			}
+
+			hr {
+			border: 0;
+			border-bottom: 1px solid #f6f6f6;
+			margin: 20px 0; 
+			}
+
+			/* -------------------------------------
+			RESPONSIVE AND MOBILE FRIENDLY STYLES
+			------------------------------------- */
+			
+			td.space-top{padding-top: 18px;}
+			td.space-bottom{padding-bottom: 18px;}
+			@media only screen and (max-width: 620px) {
+			
+				.container{padding: 0;}
+				table.body h1 {
+				font-size: 28px !important;
+				margin-bottom: 10px !important; 
+				}
+				table.body p,
+				table.body ul,
+				table.body ol,
+				table.body td,
+				table.body span,
+				table.body a {
+				font-size: 14px !important; 
+				}
+				  
+				table.body .container {
+				padding: 0 !important;
+				width: 100% !important; 
+				}
+				table.body .main {
+				border-left-width: 0 !important;
+				border-radius: 0 !important;
+				border-right-width: 0 !important; 
+				}
+				table.body .btn table {
+				width: 100% !important; 
+				}
+				table.body .btn a {
+				width: 100% !important; 
+				}
+				table.body .img-responsive { 
+				max-width: 100% !important;
+				width: auto !important; 
+				}
+			}
+
+			/* -------------------------------------
+			PRESERVE THESE STYLES IN THE HEAD
+			------------------------------------- */
+			@media all {
+			.ExternalClass {
+			width: 100%; 
+			}
+			.ExternalClass,
+			.ExternalClass p,
+			.ExternalClass span,
+			.ExternalClass font,
+			.ExternalClass td,
+			.ExternalClass div { 
+			}
+			.apple-link a {
+			color: inherit !important;
+			font-family: inherit !important;
+			font-size: inherit !important;
+			font-weight: inherit !important; 
+			text-decoration: none !important; 
+			}
+			#MessageViewBody a {
+			color: inherit;
+			text-decoration: none;
+			font-size: inherit;
+			font-family: inherit;
+			font-weight: inherit; 
+			}
+			.btn-primary table td:hover {
+			background-color: #34495e !important; 
+			}
+			.btn-primary a:hover {
+			background-color: #34495e !important;
+			border-color: #34495e !important; 
+			} 
+			}
+
+		</style>
+		
+	</head>
+	
+	<body style="margin:0;padding:0;word-spacing:normal; "> 
+		<table role="presentation"  aria-roledescription="email" lang="en" style="width:100%;border:none;border-spacing:0;">
+			<tr>
+			
+				<td class="container bottom-space">
+					
+					<!-- Logo Heading -->
+					<table role="presentation" class="main">
+						<thead>
+							<tr>
+								<td style="padding: 15px;text-align:left;">
+									<a href="#" style="text-decoration:none;"><img src="https://ernieshigh.dev/img/email/Star-of-Honolulu.png" alt="Logo"></a>
+								</td> 
+				
+								<td>&nbsp;</td>
+							</tr>
+						</thead>
+						<!-- START MAIN CONTENT AREA -->
+						<tbody>
+							<tr>
+								<td class="wrapper">
+									<table role="presentation" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<td class="space-bottom">
+												<h1>Aloha Kamla!</h1>
+												<h2>Thank you for booking with us. Your Reservation is as follows:</h2>
+											</td>
+											<td>&nbsp;</td>
+										</tr>
+									</table>
+									
+									<table role="presentation" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<td style="width: 125px;"> <span class="bold">Activity Date:</span></td>
+											<td><span id="activity_date"> Tuesday, 11/16/21 </span></td>
+										</tr>
+										<tr>
+											<td style="width: 125px;"> <span class="bold">Activity: </span></td>
+											<td><span id="activitay_name"> Three Star Sunset Dinner & Show </span></td>
+										</tr>
+										<tr>
+											<td style="width: 125px;"> <span class="bold">Activity Time: </span></td>
+											<td><span id="activity_time"> 5:30PM – 7:30PM (Fridays 5:30PM – 8:30PM)</span></td>
+										</tr>
+										<tr>
+											<td style="width: 125px;"> <span class="bold">Guest Name: </span></td>
+											<td><span id="guest_name"> Kamla Fukushima </span></td>
+										</tr>
+										<tr>
+											<td style="width: 125px;"> <span class="bold">Guest: </span></td>
+											<td><span id="guest_name"> 7X Adult</span></td>
+										</tr>
+									</table>
+								</td>
+								
+							</tr>
+							
+							<tr>
+								<td class="wrapper space-bottom">
+									<table role="presentation" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<td> <span class="bold">Enhancements: </span></td>
+											<td><span class="details" id="amount"> 1X</span><span class="details" id="type">White Wine</span><span class="details" id="brand">Mer Soleil Chardonnay </span></td>
+											
+										</tr>
+										<tr>
+											<td> <span class="bold" style="padding-right: 110px;">&nbsp;</span></td>
+											<td><span class="details" id="amount"> 7X</span><span class="details" id="type">Waikiki Transportation </span><span class="details" id="brand"> </span></td>
+											 
+										</tr> 
+										<tr>
+											<td> <span class="bold">Payment Information:  </span></td>
+											<td><span class="details" id="pay_date">10/17/21 </span><span class="details" id="pay_amount"> $1,162.00 </span><span class="details" id="pay_method"> Visa XXXX0827 </span></td>
+											 
+										</tr> 
+										<tr>
+											<td> <span class="bold">Confirmation #</span></td>
+											<td><span class="details" id="confirm_number"> 123456</span></td>
+										</tr>
+										<tr>
+											<td> <span class="bold">Cancellation Policy:</span></td>
+											<td><p  class="details policy"> A cancellation fee of 100% applies for cancellations made less than 24 hours in advance, or in case of no-show.  Note: Sunset & Friday Fireworks are not guaranteed.  The Captain reserves the right to alter the route depending on sea conditions. Products may be adjusted due to government COVID-19 guidelines. </p></td>
+										
+										</tr>
+		 
+									</table>
+								
+								</td>
+							
+							</tr>
+							
+							<tr class="dark">
+								<td class="wrapper">
+									<table role="presentation" border="0" cellpadding="0" cellspacing="0" >
+										<tr>
+											<td> <h2 class="last">Your Transportation</h2></td> 
+										</tr>
+									</table>
+									<table>
+										<tr>
+											<td style="vertical-align: top;"> <span class="bold">Pick up Location: </span></td>
+											<td><span class="details" id="location"> Paoakalani Ave Side Entrance Waikiki Beach Marriot <br>2552 Kalakaua Avenue, Honolulu, HI  96815</span></td>
+								
+										</tr> 
+										
+										<tr>
+											<td  style="vertical-align: top;"> <span class="bold">Pick up Time: </span></td>
+											<td><span class="details"> 4:20 PM</span></td>
+						 
+										</tr> 
+										<tr>
+											<td style=" vertical-align: top;"> <span class="bold">Drop off Location:</span></td>
+											<td><span class="details" id="location">Waikiki Beach Marriot 2552 Kalakaua Avenue, Honolulu, HI  96815 <br>Guest Hotel: Waikiki Beach Marriot </span></td>
+											 
+										</tr> 
+									</table>
+								
+								</td>
+							
+							</tr>
+							
+							<tr>
+								<td class="wrapper space-top space-bottom">
+									<table role="presentation" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<td> <h2>Before You Go</h2></td>
+											<td>&nbsp;</td> 
+										</tr>
+										<tr>
+											<td> <span class="bold">Safe Access Oahu </span></td>
+											<td>&nbsp;</td>
+										</tr> 
+										<tr>
+											<td><p>Effective 09/13/21, Honolulu City & County Mayor mandates upon check-in proof of photo identification with:</p></td>
+											<td>&nbsp;</td>
+										</tr> 
+										<tr>
+											<td>
+												<ul>
+													<li>1. Full vaccination card OR</li>
+													<li>2. “Negative” or “not-detected” COVID-19 test result taken within 48 hours of entry to the boat.</li>
+													<li>Individuals under 12 years of age are exempt</li>
+												</ul>
+											</td>
+											<td>&nbsp;</td>
+										</tr> 
+										
+										<tr>
+											<td>*** Your credit card security is very important to us. *** </td>
+											<td>&nbsp;</td>
+										</tr>
+										<tr>
+											<td><p>At check-in, credit card used AT TIME OF PURCHASE with MATCHING photo identification MUST be presented by the cardholder. If we are unable to verify an authorized user, another form of payment may be required or reservation may be cancelled.  </p></td>
+											<td>&nbsp;</td>
+										</tr> 
+									</table>
+									<table>
+										<tr>
+											<td   style="width: 45px;"><span class="bold">Attire:  </span></td>
+											<td>Resort casual. On cooler nights, a light jacket is recommended.  </td> 
+										</tr> 
+									</table>
+									<table>
+										<tr>
+											<td  style="width: 190px;"><span class=" bold">Frequently Asked Questions:  </span></td>
+											<td>Please visit <a href="https://starofhonolulu.com/about-us/faqs" target="_blank">FAQ</a> </td> 
+										</tr> 
+									</table>
+								
+								</td>
+							
+							</tr>
+							
+							
+							<tr class="dark">
+								<td class="wrapper">
+									<table role="presentation" border="0" cellpadding="0" cellspacing="0" >
+										<tr>
+											<td> <h2 class="last">Your Activity Provider </h2></td>
+											<td>&nbsp;</td> 
+										</tr>
+										<tr>
+											<td> <span class="bold">Star of Honolulu  </span></td>
+											<td>&nbsp;</td>
+											
+										</tr> 
+										<tr>
+											<td>
+												<ul>
+													<li>Aloha Tower Marketplace</li>
+													<li>1 Aloha Tower Drive, Pier 8, Honolulu, HI 96813</li>
+													<li><a href="https://goo.gl/maps/p2ZoGN3Unpaszwm26" target="_blank">Get Directions </a> </li>
+													<li><a href="tel:+18089837827">808-983-7827</a></li>
+												</ul>
+											</td>
+											<td>&nbsp;</td> 
+										</tr> 
+									</table>
+									<table> 
+										<tr>
+											<td  style="width: 125px;"> <span class="bold">Check-in Time: </span></td>
+											<td>4:45PM at the Star of Honolulu</td> 
+										</tr>  
+										<tr>
+											<td  style="width: 125px;"> <span class="bold">Parking: </span></td>
+											<td >Self-parking is available. For more info, <a href="https://starofhonolulu.com/directions-parking" target="_blank">click here</a></td>
+											
+										</tr>  
+										
+										 
+									</table>
+								
+								</td>
+							
+							</tr>
+							  
+							
+						</tbody>
+						<!-- END MAIN CONTENT AREA -->
+						<tfoot class="footer">
+							<table role="presentation" border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<td>
+										<table>
+										
+											<tr>
+												<td><h2>Mahalo!</h2></td>
+												<td>&nbsp;</td>
+											</tr>
+										
+											<tr>
+												<td>Mike Moore  </td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr>
+												<td>Reservation Specialist </td>
+												<td>&nbsp;</td>
+											</tr>
+											
+										</table>
+										<table>
+											<tr>
+												<td class="top-space bottom-space">Stay in touch at #StarofHonolulu</td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="https://www.facebook.com/starofhonolulu/" target="_blank" rel="noopener"><i class="ua-icon ua-icon-facebook2" aria-hidden="true"><img src="https://ernieshigh.dev/img/email/facebook.png" alt="Faceboo"></a></span>
+													<a href="https://twitter.com/starofhonolulu?lang=en" target="_blank" rel="noopener"><i class="ua-icon ua-icon-twitter2" aria-hidden="true"><img src="https://ernieshigh.dev/img/email/twit.png" alt="Twitter"></a></span>
+													<a href="https://www.instagram.com/starofhonolulu/?hl=en" target="_blank" rel="noopener"><i class="ua-icon ua-icon-instagram" aria-hidden="true"><img src="https://ernieshigh.dev/img/email/instagram.png" alt="Instagram"></a></span>
+													<a href="https://www.tripadvisor.com/Attraction_Review-g60982-d1136351-Reviews-Star_of_Honolulu_Dinner_and_Whale_Watch_Cruises-Honolulu_Oahu_Hawaii.html" target="_blank" rel="noopener"><img src="https://ernieshigh.dev/img/email/tripadvisor.png" alt="Trip Advisor"></a></span>
+													<a href="https://www.yelp.com/biz/star-of-honolulu-honolulu" target="_blank" rel="noopener"><i class="ua-icon ua-icon-yelp" aria-hidden="true"><img src="https://ernieshigh.dev/img/email/yelp.png" alt="Yelp"></a></span>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</tfoot>
+					</table>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+	</body>
+</html>
+
